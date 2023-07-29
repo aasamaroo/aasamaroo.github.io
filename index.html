@@ -1,1 +1,58 @@
-Hello World
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+    <head>
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css'%}">
+<meta name="viewport" content="width=device=width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    </head>
+
+<title>Home Page</title>
+
+<body>
+
+
+<div class="header">
+    <h1>Welcome to my website!</h1>
+</div>
+
+
+
+
+    <div class="topnav">
+        <a href="{% url 'home' %}" class='active'>Home</a>
+        <a href="{% url 'creators' %}" class='active'>About Me</a>
+        <a href="{% url 'test' %}" class='active'>Test</a>
+    </div>
+
+    <div class="left-half">
+
+        <p>This website was made using HTML, CSS, and the Django framework. It was made as sort of a
+            fun, individual project that I could share with friends, or anyone else that my be interested.
+            My goal with this website is for it to serve as a baseline for future projects, and a place where people can
+            come to learn about me, and what I do.
+        </p>
+
+       </div>
+       <div class="right-half">
+
+       </div>
+
+       <a class="floating-btn" id="menu-connectdevelop">
+        <i class="fa fa-connectdevelop my-float"></i>
+        </a>
+        <ul>
+        <li><a href="https://www.linkedin.com/in/anandsamaroo12a92a1b5/" target="_blank" id="menu-linkedin">
+        <i class="fa fa-linkedin my-float"></i>
+        </a></li>
+        <li><a href="https://www.instagram.com/johndoe27654/" target="_blank" id="menu-instagram">
+        <i class="fa fa-instagram my-float"></i>
+        </a></li>
+        <li><a href="https://www.twitter.com/JohnDoe2710" target="_blank" id="menu-twitter">
+        <i class="fa fa-twitter my-float"></i>
+        </a></li>
+        </ul>
+</body>
+
+
