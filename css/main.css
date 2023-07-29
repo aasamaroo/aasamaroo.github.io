@@ -259,7 +259,7 @@ a#menu-connectdevelop:hover > i{
     cursor: pointer;
   }
 
-  .sidenav {
+  /* .sidenav {
     width: 20px;
     position: fixed;
     z-index: 1;
@@ -291,7 +291,7 @@ a#menu-connectdevelop:hover > i{
   #help {
     top: 165px;
     background: #2b6be4;
-  }
+  } */
 
   img{
 	  max-width: 100%;
