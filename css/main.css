@@ -86,6 +86,15 @@ p {
     color: black;
 }
 
+/* Centered section inside the top navigation */
+.topnav-centered a {
+	float: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+
 ul.no-bullets{
     font-size: xx-large;
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
