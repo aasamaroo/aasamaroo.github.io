@@ -1,108 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-    <head>
-<link rel="stylesheet" type="text/css" href="css/main.css">
-<meta name="viewport" content="width=device=width, initial-scale=1.0">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    </head>
-
-<title>Home Page</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aasamaroo</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="scripts/script.js";></script>
+</head>
 
 <body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Alex Samaroo</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#browse">Browse Jobs</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to my Website</h2>
+            <p>I provide multiple services that can suit your needs.</p>
+            <a href="#contact" class="btn">Get Started</a>
+        </div>
+    </section>
 
-<div class="header">
-    <h1><b>Alex Samaroo</b></h1>
-</div>
-
-    <section id="about">
-        <div class="content" id="content-home">
-            <h2><b>ABOUT</b></h2>
-            <p>
-                My name is Anand Alexander Samaroo. I am a Software Engineer that is looking to do a bit of everything.<br>
-                My grandfather was always a role model for me because he knew how to do everything, and taught me almost everything I know. With that being said, I want to be just like him. I want to do everything, I want to help people in any way I can, and I want to be good at everything that I do just like my grandfather.<br>
-            </p>
+    <!-- Browse Jobs Section -->
+    <section id="browse" class="browse-jobs">
+        <div class="container">
+            <h2>Browse Jobs</h2>
+            <p>Here are a list of jobs I can do. At the moment I am working on my own, but I would like to get more people on my team in the coming future.</p>
+            <br>
+            <br>
+            <div class="job-listings" id="jobListings"></div>
         </div>
     </section>
 
 
-    <section id="services">
-        <div class="content" id="content-home">
-            <h2><b>SERVICES</b></h2>
-            <h3>
-                Software Development
-            </h3>
-            <p>
-                As a current Software Engineer, I am passionate about creating state-of-the-art software solutions which drives innovation and growth for all clients.<br>
-                I am well-versed in Frontend and Backend development, as well as Cloud Computing, and database management.<br>
-                As I grow my business, I want to bring together talented developers like myself to provide the following:<br>
-                    -A team of highly skilled developers who are proficient in the lastest technologies, and Software Development techniques.<br>
-                    -Software solutions tailored to your specific needs.<br>
-                    -Ongoing support, and consistent communication to establish a strong relationship with clients.</p>
-            <h3>
-                Copyrighting
-            </h3>
-            <p>
-                Copyrighting is a skill that requires extensive knowledge, and observations of human behavior. I believe that in order to write strong copy, it is important to understand the target audience as well as convince them why a particular product/service is necessary for them to go from their current state to their desired state.<br>
-                Additionally, I believe that establishing a good relationship with the audience is valuable as there needs to be a level of trust established with you and your audience. With that being said, I write my copy with the intentions of gaining the audience's trust by ensuring them that by interacting with you, there will be an equal exchange in value. This will not only establish trust with you and your audience, but it will also motivate your audience to choose YOU over the competition. <br>
-                My process of Copywriting includes robust methodologies used by the most successful copywriters which lead to incredible results. I will ask you the right questions, do the necessary research on all stakeholders involved, and I will overall make sure to meet YOUR particular needs at all times.
-            </p>
-            <h3>
-                Content Creation
-            </h3>
-            <p>
-                Content Creation has taken the world by storm in recent years. With the rise of social media platforms, and the rate at which content on these social media platforms are consumed, it is understandable as to why the demand for content creators has seen a massive increase as well.<br>
-                With that being said, I have learned the ins and outs of effective modern content creation, and have learned to use AI to my advantage when it comes to content creation. The importance of using AI in content creation lies in the fact that AI is another thing that is growing at an exponential rate, and every passing day the Machine Learning models that power AI only gain more data to be further trained.<br>
-            </p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>My name is Anand Alexander Samaroo. I am a Software Engineer that is looking to do a bit of everything.</p>
         </div>
     </section>
 
-    <section id="examples" class="fading">
-        <div class="content" id="content-home">
-            <h2><b>EXAMPLES</b></h2>
-            <p>
-                <a href="https://github.com/aasamaroo">Github Page</a>
-            </p>
-            <p>
-                <a href="https://github.com/aasamaroo">Copywriting Samples</a>
-            </p>
-            <p>
-                <a href="https://github.com/aasamaroo">YouTube Channel</a>
-            </p>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Leave your name and email, and I will contact you. Additionally, you can check out my Social Media using the button on the bottom right.</p>
+            <br>
+            <br>
+            <form action="contact_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit" class="btn">Submit</button>
+            </form>
         </div>
     </section>
 
-    <section id="contact">
-        <h2><b>CONTACT</b></h2>
-        <p>
-            My social media pages can be found using the button in the bottom right of the screen. Additionally, you can contact me via phone and email found below.
-        </p>
-        <p>
-            Phone:
-        </p>
-        <p>
-            Email:
-        </p>
-    </section>
-
-
-
-       <a class="floating-btn" id="menu-connectdevelop">
-        <i class="fa fa-connectdevelop my-float"></i>
-        </a>
-        <ul>
-        <li><a href="https://www.linkedin.com/in/anandsamaroo12a92a1b5/" target="_blank" id="menu-linkedin">
-        <i class="fa fa-linkedin my-float"></i>
-        </a></li>
-        <li><a href="https://www.instagram.com/aasamaroo/" target="_blank" id="menu-instagram">
-        <i class="fa fa-instagram my-float"></i>
-        </a></li>
-        <li><a href="https://www.twitter.com/aasamaroo" target="_blank" id="menu-twitter">
-        <i class="fa fa-twitter my-float"></i>
-        </a></li>
-        </ul>
-
+<!-- Footer Section -->
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/anandsamaroo12a92a1b5/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.twitter.com/aasamaroo" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/aasamaroo" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
 </body>
 
-
+</html>
