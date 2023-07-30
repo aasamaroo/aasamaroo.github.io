@@ -57,6 +57,28 @@ h1 {
 
 h2 {
 	font-family: 'Times New Roman', Times, serif;
+	font-size: 35px;
+	letter-spacing: normal;
+	word-spacing: normal;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-align: center;
+}
+
+h3 {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 30px;
+	letter-spacing: normal;
+	word-spacing: normal;
+	color: #000000;
+	font-weight: normal;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-align: center;
 }
 
 main {
