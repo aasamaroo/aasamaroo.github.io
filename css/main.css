@@ -42,7 +42,7 @@ header::before {
 
 h1 {
 	font-family: "Times New Roman", Times, serif;
-	font-size: 40px;
+	font-size: xx-large;
 	letter-spacing: 2px;
 	word-spacing: 2px;
 	color: #000000;
@@ -57,7 +57,7 @@ h1 {
 
 h2 {
 	font-family: 'Times New Roman', Times, serif;
-	font-size: 35px;
+	font-size: x-large;
 	letter-spacing: normal;
 	word-spacing: normal;
 	color: #000000;
@@ -70,7 +70,7 @@ h2 {
 
 h3 {
 	font-family: 'Times New Roman', Times, serif;
-	font-size: 30px;
+	font-size: large;
 	letter-spacing: normal;
 	word-spacing: normal;
 	color: #000000;
