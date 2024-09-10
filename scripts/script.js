@@ -7,22 +7,22 @@ const jobData = [
       description: "Create robust, state-of-the-art software that incorporates modern software engineering practices used by the most successful businesses.",
     },
     {
-      title: "Copywriting",
-      description: "Create a business plan suited to your needs, tailored to your target audience.",
+      title: "Long-Form Content",
+      description: "Created YouTube videos for small content creators, and gave them a significant boost in viewership and engagement.",
     },
     {
-      title: "Content Creation",
-      description: "Use the power of social media to grab the attention of millions with eye-catching content, creating with cutting edge technology.",
+      title: "Short-Form Content",
+      description: "Created short form content such as TikTok videos to help promote small content creators on YouTube and Twitch.",
     },
   ];
 
   // Function to generate dynamic job listings
-  function generateJobListings() {
-    const jobListingsContainer = document.getElementById("jobListings");
+  function generatepastProjects() {
+    const pastProjectsContainer = document.getElementById("pastProjects");
 
-    let jobListingsHTML = "";
+    let pastProjectsHTML = "";
     jobData.forEach((job) => {
-      jobListingsHTML += `
+      pastProjectsHTML += `
         <div class="job">
           <h3>${job.title}</h3>
           <p>${job.description}</p>
@@ -30,11 +30,11 @@ const jobData = [
       `;
     });
 
-    jobListingsContainer.innerHTML = jobListingsHTML;
+    pastProjectsContainer.innerHTML = pastProjectsHTML;
   }
 
   // Call the function to generate job listings on page load
-  window.onload = generateJobListings;
+  window.onload = generatepastProjects;
 
 // script.js
 
