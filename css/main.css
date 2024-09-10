@@ -201,8 +201,8 @@ footer p {
 /* Form Section */
 
 iframe {
-    max-width: 1200px;
-    height: 800px;
+    max-width: 800px;
+    height: 640px;
     border: none;
 }
 
