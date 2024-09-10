@@ -198,6 +198,19 @@ footer p {
     }
 }
 
+/* Form Section */
+
+iframe {
+    max-width: 1200px;
+    height: 800px;
+    border: none;
+}
+
+@media screen and (max-width: 768px) {
+    iframe {
+        height: 400px;
+    }
+}
 
 /* Fading Effect for Sections */
 section {
